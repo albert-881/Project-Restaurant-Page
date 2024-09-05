@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll; /* Ensures the scrollbar is always visible */
+}
+
 body {
     display:flex;
     flex-direction: column;
@@ -23,6 +27,7 @@ body {
     margin-top:20px;
     border:2px solid #606364;
     border-radius: 15px;
+    width: 300px;
 }
 
 img {
@@ -38,11 +43,10 @@ img {
 }
 
 button {
-    border-radius: 10px;
-    border: none;
+    background: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 5px;
-    margin-top:20px;
+    border: none;
+    
 }
 
 h1 {
@@ -52,11 +56,34 @@ h1 {
 
 h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .text{
     width:200px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    display:flex;
+    gap:30px;
+    
+    
+    padding:20px;
+   
+    justify-content: flex-end;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    background-color: darkgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header-text{
+    margin-left: 15px;
 }
