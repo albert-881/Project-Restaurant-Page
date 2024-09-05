@@ -1,0 +1,62 @@
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("./images/foodImage.jpg");
+    background-size: cover;       /* Ensures the image covers the entire area */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-attachment: fixed; /* Keeps the background fixed while the content scrolls */
+    min-height: 100%;             /* Ensures the background covers the entire page */
+    margin: 0;     
+}
+
+#content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #606364;
+    padding-left:50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin-top:20px;
+    border:2px solid #606364;
+    border-radius: 15px;
+}
+
+img {
+    width:300px;
+    height:auto;
+    border: 2px solid grey;
+  }
+
+.button-active {
+    background-color: grey;
+    color:whitesmoke;
+    
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    margin-top:20px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ABA4aa;
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+.text{
+    width:200px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -19,5 +19,21 @@ module.exports = {
       template: "./src/template.html",
     }),
   ],
-  
+  module: {
+    rules: [
+      
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        type: 'asset/resource', // Or use file-loader syntax if you're still using it
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
